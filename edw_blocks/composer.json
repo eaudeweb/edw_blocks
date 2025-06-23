@@ -1,0 +1,13 @@
+{
+    "name": "eaudeweb/edw_blocks",
+    "description": "A collection of custom blocks",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "dtabirca",
+            "email": "dtabirca@1029792.no-reply.drupal.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
