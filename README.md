@@ -4,7 +4,7 @@ Provides a collection of custom blocks like _Hero Banner_ block and _Search_ blo
 
 ## Installation
 
-Add
+Add the following snippet to the `repositories` section of your `composer.json` file:
 ```
 {
     "type": "git",
