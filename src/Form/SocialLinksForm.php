@@ -22,28 +22,28 @@ class SocialLinksForm extends ConfigFormBase {
       '#type' => 'url',
       '#title' => $this->t('Facebook URL'),
       '#default_value' => $config->get('facebook') ?: '',
-      '#maxlength' => 2048,
+      '#maxlength' => 512,
     ];
 
     $form['youtube'] = [
       '#type' => 'url',
       '#title' => $this->t('YouTube URL'),
       '#default_value' => $config->get('youtube') ?: '',
-      '#maxlength' => 2048,
+      '#maxlength' => 512,
     ];
 
     $form['linkedin'] = [
       '#type' => 'url',
       '#title' => $this->t('LinkedIn URL'),
       '#default_value' => $config->get('linkedin') ?: '',
-      '#maxlength' => 2048,
+      '#maxlength' => 512,
     ];
 
     $form['x'] = [
       '#type' => 'url',
       '#title' => $this->t('X URL'),
       '#default_value' => $config->get('x') ?: '',
-      '#maxlength' => 2048,
+      '#maxlength' => 512,
     ];
 
     return parent::buildForm($form, $form_state);
