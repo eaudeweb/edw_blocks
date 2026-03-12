@@ -1,0 +1,9 @@
+{% if links %}
+  <ul>
+    {% for name, url in links %}
+      <li>
+        <a href="{{ url }}" target="_blank" rel="noopener noreferrer"> {{ name }} </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

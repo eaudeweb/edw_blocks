@@ -23,6 +23,11 @@ function edw_blocks_theme($existing, $type, $theme, $path) {
         'date' => '',
       ],
     ],
+    'edw_social_links_block' => [
+      'variables' => [
+        'links' => [],
+      ]
+    ]
   ];
 }
 

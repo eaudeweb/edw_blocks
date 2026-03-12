@@ -1,0 +1,45 @@
+.block-edw-social-links-block .block__content ul {
+      list-style: none;
+      display: flex;
+      margin-top: 20px;
+      padding-left: 0;
+}
+.block-edw-social-links-block .block__content ul li {
+  margin-right: 20px;
+}
+
+.block-edw-social-links-block .block__content ul li a {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  text-indent: -9999px;
+  white-space: nowrap;
+}
+
+.block-edw-social-links-block .block__content ul li a::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.block-edw-social-links-block .block__content ul li:first-child a::before {
+  background-image: url('../assets/images/facebook-icon.svg');
+}
+
+.block-edw-social-links-block .block__content ul li:nth-child(2) a::before {
+  background-image: url('../assets/images/youtube-icon.svg');
+}
+
+.block-edw-social-links-block .block__content ul li:nth-child(3) a::before {
+  background-image: url('../assets/images/linkedin-icon.svg');
+}
+
+.block-edw-social-links-block .block__content ul li:nth-child(4) a::before {
+  background-image: url('../assets/images/x-icon.svg');
+}

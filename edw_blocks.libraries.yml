@@ -2,3 +2,8 @@ hero_banner:
   css:
     component:
       css/hero-banner.css: {}
+
+social_links:
+  css:
+    component:
+      css/social-links.css: {}
