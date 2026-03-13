@@ -1,0 +1,7 @@
+edw_blocks.settings:
+  path: '/admin/config/user-interface/social-media-links'
+  defaults:
+    _form: '\Drupal\edw_blocks\Form\SocialLinksForm'
+    _title: 'Social media links'
+  requirements:
+    _permission: 'administer site configuration'
