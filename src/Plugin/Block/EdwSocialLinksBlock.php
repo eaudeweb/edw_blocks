@@ -19,7 +19,7 @@ class EdwSocialLinksBlock extends EdwBlockBase {
    * {@inheritdoc}
    */
   public function build(): array {
-    $config = \Drupal::config('edw_socialmedialinks.settings');
+    $config = \Drupal::config('edw_blocks.socialmedialinks.settings');
 
     $links = array_filter([
       'facebook' => $config->get('facebook'),
@@ -32,7 +32,7 @@ class EdwSocialLinksBlock extends EdwBlockBase {
       '#theme' => 'edw_social_links_block',
       '#links' => $links,
       '#cache' => [
-        'tags' => ['config:edw_socialmedialinks.settings'],
+        'tags' => ['config:edw_blocks.socialmedialinks.settings'],
         'contexts' => $this->getCacheContexts(),
       ],
       '#attached' => [
@@ -48,7 +48,7 @@ class EdwSocialLinksBlock extends EdwBlockBase {
    */
   public function getCacheTags(): array {
     return Cache::mergeTags(parent::getCacheTags(), [
-      'config:edw_socialmedialinks.settings',
+      'config:edw_blocks.socialmedialinks.settings',
     ]);
   }
 

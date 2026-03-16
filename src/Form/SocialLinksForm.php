@@ -12,11 +12,11 @@ class SocialLinksForm extends ConfigFormBase {
   }
 
   protected function getEditableConfigNames(): array {
-    return ['edw_socialmedialinks.settings'];
+    return ['edw_blocks.socialmedialinks.settings'];
   }
 
   public function buildForm(array $form, FormStateInterface $form_state): array {
-    $config = $this->config('edw_socialmedialinks.settings');
+    $config = $this->config('edw_blocks.socialmedialinks.settings');
 
     $form['facebook'] = [
       '#type' => 'url',
@@ -51,7 +51,7 @@ class SocialLinksForm extends ConfigFormBase {
 
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $this->configFactory()
-      ->getEditable('edw_socialmedialinks.settings')
+      ->getEditable('edw_blocks.socialmedialinks.settings')
       ->set('facebook', $form_state->getValue('facebook'))
       ->set('youtube', $form_state->getValue('youtube'))
       ->set('linkedin', $form_state->getValue('linkedin'))
